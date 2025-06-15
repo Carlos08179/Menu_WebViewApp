@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cambiar texto -->
+    <item
+        android:id="@+id/context_change_text"
+        android:icon="@drawable/ic_edit"
+        android:title="Cambiar texto" />
+
+    <!-- Mostrar Toast -->
+    <item
+        android:id="@+id/context_show_toast"
+        android:icon="@drawable/ic_message"
+        android:title="Mostrar Toast" />
+
+</menu>

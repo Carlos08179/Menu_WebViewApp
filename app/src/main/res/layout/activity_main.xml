@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar personalizado -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="WebView App"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <!-- Contenedor de controles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Botón de menú hamburguesa con diseño mejorado -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_popup_menu"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_menu_hamburger"
+                android:contentDescription="Menú flotante"
+                app:backgroundTint="@color/accent_color"
+                app:tint="@android:color/white"
+                app:fabSize="mini"
+                app:elevation="6dp"
+                app:hoveredFocusedTranslationZ="8dp"
+                app:pressedTranslationZ="12dp" />
+
+            <!-- TextView para el menú contextual -->
+            <TextView
+                android:id="@+id/tv_context_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_background"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Mantén presionado aquí"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- ProgressBar para el WebView -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8dp"
+            android:progressTint="@color/accent_color"
+            android:visibility="gone" />
+
+        <!-- WebView -->
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

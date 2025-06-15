@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WebView App</string>
+
+    <!-- Textos de la aplicación -->
+    <string name="context_menu_text">Mantén presionado aquí</string>
+    <string name="context_menu_text_changed">¡Texto cambiado!</string>
+
+    <!-- Mensajes Toast -->
+    <string name="loading_page">Cargando página...</string>
+    <string name="reloading_page">Recargando página...</string>
+    <string name="navigating_to_google">Navegando a Google...</string>
+    <string name="text_changed">Texto cambiado</string>
+    <string name="context_toast_message">¡Hola! Este es un mensaje desde el menú contextual</string>
+    <string name="webview_hidden">🙈 WebView ocultado</string>
+    <string name="webview_shown">👁️ WebView mostrado</string>
+    <string name="navigation_back">⬅️ Navegando hacia atrás</string>
+    <string name="navigation_forward">➡️ Navegando hacia adelante</string>
+    <string name="no_back_pages">❌ No hay páginas anteriores</string>
+    <string name="no_forward_pages">❌ No hay páginas siguientes</string>
+
+    <!-- Títulos de menús -->
+    <string name="options_menu_title">Opciones</string>
+    <string name="context_menu_title">Opciones de texto</string>
+
+    <!-- Opciones de menú -->
+    <string name="menu_reload">Recargar página</string>
+    <string name="menu_go_google">Ir a Google</string>
+    <string name="menu_close_app">Cerrar app</string>
+    <string name="menu_change_text">Cambiar texto</string>
+    <string name="menu_show_toast">Mostrar Toast</string>
+    <string name="menu_hide_webview">Ocultar WebView</string>
+    <string name="menu_show_webview">Mostrar WebView</string>
+
+    <!-- Descripciones de contenido -->
+    <string name="menu_button_description">Botón de menú</string>
+    <string name="toolbar_title">WebView App</string>
+</resources>

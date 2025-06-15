@@ -1,0 +1,19 @@
+# Android Studio
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Build output
+/build/
+*/build/
+
+# NDK
+.externalNativeBuild/
+
+# Keystore files
+*.jks
+
+# Other
+/captures/
+/output.json

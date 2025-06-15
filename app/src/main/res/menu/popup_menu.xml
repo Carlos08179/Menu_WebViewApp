@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Título del grupo de navegación -->
+    <group android:id="@+id/navigation_group" android:checkableBehavior="none">
+        <item
+            android:id="@+id/popup_navigation_back"
+            android:icon="@drawable/ic_arrow_back"
+            android:title="🔙 Página anterior" />
+
+        <item
+            android:id="@+id/popup_navigation_forward"
+            android:icon="@drawable/ic_arrow_forward"
+            android:title="🔜 Página siguiente" />
+    </group>
+
+    <!-- Separador visual -->
+    <group android:id="@+id/visibility_group" android:checkableBehavior="none">
+        <item
+            android:id="@+id/popup_hide_webview"
+            android:icon="@drawable/ic_visibility_off"
+            android:title="🙈 Ocultar WebView" />
+
+        <item
+            android:id="@+id/popup_show_webview"
+            android:icon="@drawable/ic_visibility"
+            android:title="👁️ Mostrar WebView" />
+    </group>
+
+</menu>

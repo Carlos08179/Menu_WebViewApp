@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="accent_color">#FF4081</color>
+
+    <!-- Colores de fondo y texto -->
+    <color name="background_color">#F5F5F5</color>
+    <color name="text_color">#333333</color>
+    <color name="text_secondary_color">#666666</color>
+
+    <!-- Colores del sistema -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
